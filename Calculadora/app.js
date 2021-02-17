@@ -4,7 +4,7 @@ const url = require('url');
 const port = 3000; app.get('/calculadora', (req, res) => {
   let numero = parseFloat(req.query.numero);
   let numero2 = parseFloat(req.query.numero2);
-  let operacion = req.query.operacion
+  let operacion = req.query.operacion;
   const calculadora = {
     get operacion() {
       switch (operacion) {
